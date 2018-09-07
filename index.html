@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery simple Slider</title>
+        <link rel="stylesheet" href="slider.css">
+    </head>
+    <body>
+
+        <div class="slider-container">
+
+            <div class="slider">
+                <div class="slider__item">
+                    <img src="images/visa.png" alt="">
+                    <span class="slider__caption">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit.<a href="#">Далее >></a>
+                    </span>
+                </div>
+                <div class="slider__item">
+                    <img src="images/2.jpg" alt="">
+                    <span class="slider__caption">2 Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit. Culpa, facilis.</span>
+                </div>
+                <div class="slider__item">
+                    <img src="images/3.jpg" alt="">
+                    <span class="slider__caption">3 Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit. Suscipit, culpa!</span>
+                </div>
+            </div>
+
+            <div class="slider__switch slider__switch--prev" data-al_Slider-dir="prev">
+                <span><</span>
+            </div>
+            <div class="slider__switch slider__switch--next" data-al_Slider-dir="next">
+                <span>></span>
+            </div>
+
+        </div>
+
+        <script src="jquery-2.2.4.min.js"></script>
+        <script src="slider.js"></script>
+        <script>
+        	// $(".slider-container").al_Slider();
+            $(".slider-container").al_Slider({
+                speed: 500
+            });
+        </script>
+    </body>
+</html>
